@@ -1,0 +1,19 @@
+! Clear current Mod1 and Mod4 assignments
+clear mod1
+clear mod4
+
+! Remap Alt_L (keycode 64) to Super_L
+keycode 64 = Super_L
+! Remap Alt_R (keycode 108) to Super_R
+keycode 108 = Super_R
+
+! Assign new Super_L and Super_R to mod4
+add mod4 = Super_L Super_R
+
+! Remap Super_L (keycode 133) to Alt_L
+keycode 133 = Alt_L
+! Remap Super_R (keycode 134) to Alt_R
+keycode 134 = Alt_R
+
+! Assign new Alt_L and Alt_R to mod1
+add mod1 = Alt_L Alt_R

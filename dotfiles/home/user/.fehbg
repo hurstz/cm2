@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-fill '/home/trunk/Pictures/Backgrounds/feh_background.jpg' 
