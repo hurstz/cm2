@@ -1,44 +1,0 @@
-Reading package lists...
-Building dependency tree...
-Reading state information...
-The following additional packages will be installed:
-  openssh-sftp-server runit-helper
-Suggested packages:
-  molly-guard monkeysphere ssh-askpass
-The following NEW packages will be installed:
-  openssh-server openssh-sftp-server runit-helper
-0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
-Need to get 528 kB of archives.
-After this operation, 2,214 kB of additional disk space will be used.
-Get:1 http://deb.debian.org/debian bookworm/main amd64 runit-helper all 2.15.2 [6,520 B]
-Get:2 http://security.debian.org/debian-security bookworm-security/main amd64 openssh-sftp-server amd64 1:9.2p1-2+deb12u3 [65.8 kB]
-Get:3 http://security.debian.org/debian-security bookworm-security/main amd64 openssh-server amd64 1:9.2p1-2+deb12u3 [456 kB]
-Preconfiguring packages ...
-Fetched 528 kB in 0s (1,763 kB/s)
-Selecting previously unselected package openssh-sftp-server.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 103082 files and directories currently installed.)
-Preparing to unpack .../openssh-sftp-server_1%3a9.2p1-2+deb12u3_amd64.deb ...
-Unpacking openssh-sftp-server (1:9.2p1-2+deb12u3) ...
-Selecting previously unselected package runit-helper.
-Preparing to unpack .../runit-helper_2.15.2_all.deb ...
-Unpacking runit-helper (2.15.2) ...
-Selecting previously unselected package openssh-server.
-Preparing to unpack .../openssh-server_1%3a9.2p1-2+deb12u3_amd64.deb ...
-Unpacking openssh-server (1:9.2p1-2+deb12u3) ...
-Setting up runit-helper (2.15.2) ...
-Setting up openssh-sftp-server (1:9.2p1-2+deb12u3) ...
-Setting up openssh-server (1:9.2p1-2+deb12u3) ...
-
-Creating config file /etc/ssh/sshd_config with new version
-Creating SSH2 RSA key; this may take some time ...
-3072 SHA256:4gYOCHCm8QYiOHS6RFG+Ra627M3cmerJMKYF9hJ/c1U root@thinkpad-x13 (RSA)
-Creating SSH2 ECDSA key; this may take some time ...
-256 SHA256:H8UEXrUcAhemje4rzg5TFy3oVX84R2VzUO0vv/S98Ik root@thinkpad-x13 (ECDSA)
-Creating SSH2 ED25519 key; this may take some time ...
-256 SHA256:v8o8hC6m4k1NGnq5OADhkaH0yGVHvRr1UCasplRiz1I root@thinkpad-x13 (ED25519)
-Created symlink /etc/systemd/system/sshd.service → /lib/systemd/system/ssh.service.
-Created symlink /etc/systemd/system/multi-user.target.wants/ssh.service → /lib/systemd/system/ssh.service.
-rescue-ssh.target is a disabled or a static unit, not starting it.
-ssh.socket is a disabled or a static unit, not starting it.
-Processing triggers for man-db (2.11.2-2) ...
-Processing triggers for ufw (0.36.2-1) ...

@@ -20,7 +20,7 @@ def generate_file_tree(dir_path, prefix=""):
         full_path = os.path.join(dir_path, path)
         if os.path.isdir(full_path):
             file_tree += f"{prefix}{pointer}{path}/\n"
-            file_tree += generate_file_tree(full_path, prefix + ("│   " if pointer == "├── " else "    "))
+            file_tree += generate_file_tree(full_path, prefix + ("│ " if pointer == "├── " else "  "))
         else:
             file_tree += f"{prefix}{pointer}{path}\n"
 

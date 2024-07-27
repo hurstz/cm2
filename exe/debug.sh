@@ -14,11 +14,12 @@ else
 fi
 
 # print all variables from the .env file
-echo "Environment variables from .env file:"
 while IFS= read -r line || [ -n "$line" ]; do
   if [[ ! "$line" =~ ^# && "$line" =~ = ]]; then
     var_name=$(echo "$line" | cut -d '=' -f 1)
     var_value=$(eval echo "\$$var_name")
-    echo "$var_name=\"$var_value\""
+    printf "\n\$$var_name\n$var_value"
   fi
 done < "$ENV_FILE"
+
+printf "\n\n"

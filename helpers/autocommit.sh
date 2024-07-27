@@ -17,7 +17,7 @@ cd "$PROJ_ROOT"
 
 # END load environment variables
 
-python3 "$SCRIPTS_DIR/map.py"
+python3 "$HELPERS_DIR/map.py"
 
 read -p "Add, commit, and push all changes now? (y/n): " response
 
