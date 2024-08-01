@@ -52,66 +52,17 @@ create_nix_scripts # OK
 rm -rf "$OUTPUT_DIR" # TODO: make these three lines a function
 mkdir -p "$OUTPUT_DIR" # TODO: make these three lines a function
 touch "$OUTPUT_DIR/.gitkeep" # TODO: make these three lines a function
-
-install_via_apt apache2
-install_via_apt bash
-install_via_apt binutils
-install_via_apt build-essential
-install_via_apt bzip2
-install_via_apt ca-certificates
-install_via_apt cmake
-install_via_apt curl
-install_via_apt dnsutils
-install_via_apt ffmpeg
-install_via_apt gdb
-install_via_apt git
-install_via_apt gpg
-install_via_apt libfuse2
-install_via_apt make
-install_via_apt nala
-install_via_apt nasm
-install_via_apt net-tools
-install_via_apt nmap
-install_via_apt openssh-server
-install_via_apt python3
-install_via_apt python3-pip
-install_via_apt python3-venv
-install_via_apt rsync
-install_via_apt screen
-install_via_apt socat
-install_via_apt software-properties-common
-install_via_apt sudo
-install_via_apt tmux
-install_via_apt tree
-install_via_apt ufw # TODO: configure, enable ufw
-install_via_apt unzip
-install_via_apt wget
-install_via_apt whois
-install_via_apt xz-utils
-install_via_apt zip
-
-install_via_apt xorg 
-install_via_apt i3
-install_via_apt lightdm
-
-install_via_apt feh
-
-install_via_apt pulseaudio
-install_via_apt pavucontrol
-
-install_via_apt brightnessctl
-
-install_via_apt maim
-install_via_apt xclip
-install_via_apt xdotool
-
-install_via_apt lxappearance
-install_via_apt pcmanfm
-
-install_via_apt firefox-esr
-install_via_apt gh
+<<MLC
+while IFS= read -r package; do
+    install_via_apt "$package"
+done < "$MY_APT_PACKAGES"
+MLC
+# TODO: configure, enable ufw
 
 # get_nix # TODO
+while IFS= read -r package; do
+    install_via_nix "$package"
+done < "$MY_NIX_PACKAGES"
 # install_via_nix {PACKAGE_NAME} # OK
 # install_via_nix fastfetch
 # install_via_nix feh
@@ -125,6 +76,11 @@ install_via_apt gh
 
 # get_flatpak # TODO
 # add_flathub # TODO
+<<COMMENT
+while IFS= read -r package; do
+    install_via_apt "$package"
+done < "$MY_APT_PACKAGES"
+COMMENT
 # install_via_flatpak {PACKAGE_NAME} # TODO
 # install_via_flatpak gimp # TODO
 # install_via_flatpak com.discordapp.Discord

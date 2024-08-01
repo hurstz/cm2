@@ -6,8 +6,8 @@
 #                #
 ##################
 
-# Hardcoded (previous version used a .json file parsed)
 identities=(
+    # "name,email"
     "hurstz,172552088+hurstz@users.noreply.github.com"
     "example-name,name@example.com"
 )

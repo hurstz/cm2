@@ -1,0 +1,31 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libglew2.2 libslopy7.6
+Suggested packages:
+  glew-utils
+The following NEW packages will be installed:
+  libglew2.2 libslopy7.6 maim
+0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 311 kB of archives.
+After this operation, 1,407 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bookworm/main amd64 libglew2.2 amd64 2.2.0-4+b1 [175 kB]
+Get:2 http://deb.debian.org/debian bookworm/main amd64 libslopy7.6 amd64 7.6-4 [37.6 kB]
+Get:3 http://deb.debian.org/debian bookworm/main amd64 maim amd64 5.7.4-2+b1 [97.9 kB]
+Fetched 311 kB in 0s (684 kB/s)
+Selecting previously unselected package libglew2.2:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 74956 files and directories currently installed.)
+Preparing to unpack .../libglew2.2_2.2.0-4+b1_amd64.deb ...
+Unpacking libglew2.2:amd64 (2.2.0-4+b1) ...
+Selecting previously unselected package libslopy7.6.
+Preparing to unpack .../libslopy7.6_7.6-4_amd64.deb ...
+Unpacking libslopy7.6 (7.6-4) ...
+Selecting previously unselected package maim.
+Preparing to unpack .../maim_5.7.4-2+b1_amd64.deb ...
+Unpacking maim (5.7.4-2+b1) ...
+Setting up libglew2.2:amd64 (2.2.0-4+b1) ...
+Setting up libslopy7.6 (7.6-4) ...
+Setting up maim (5.7.4-2+b1) ...
+Processing triggers for man-db (2.11.2-2) ...
+Processing triggers for libc-bin (2.36-9+deb12u7) ...

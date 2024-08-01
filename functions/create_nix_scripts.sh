@@ -12,7 +12,7 @@ N="\$(basename "\$(realpath "\$0")")"
 P="nixpkgs.\$N"
 nix-env -iA \$P
 L=\$(which "\$N")
-sudo ln -s "\$L" "/usr/local/bin/\$N_nixpkg"
+sudo ln -s "\$L" "/usr/local/bin/\$N-nixpkg"
 EOL
     chmod +x "$INST_AUTO_NIX_DIR/$package"
   done < "$NIX_PACKAGES_LIST"
